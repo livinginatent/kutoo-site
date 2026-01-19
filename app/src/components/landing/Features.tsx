@@ -1,61 +1,87 @@
-import { Box, GraduationCap, TrendingUp, Shield } from "lucide-react";
+import Image from "next/image";
 
 const features = [
   {
-    icon: Box,
+    icon: '/boxes.svg',
     title: "Crypto Boxes",
-    description: "Buy curated boxes containing real cryptocurrencies. Each box is a surprise mix of top coins at unbeatable value.",
-    color: "bg-primary/10 text-primary",
+    description: "Discover themed boxes to help you understand well-known cryptocurrencies. Choose a predefined box or create your own.",
+    borderGradient: "linear-gradient(66.49deg, #F28482 14.51%, #84A59D 95.46%)",
   },
   {
-    icon: GraduationCap,
-    title: "Learn Risk-Free",
-    description: "Practice trading with dummy coins that mirror real market movements. Make mistakes without losing a penny.",
-    color: "bg-secondary/20 text-secondary",
+    icon: '/investing.svg',
+    title: "Practice Investing",
+    description: "Practice investing with simulated assets that mirror real market movements. Make mistakes without losing a penny.",
+    borderGradient: "linear-gradient(158.31deg, #84A59D 3.77%, #CDB4DB 85.77%)",
   },
   {
-    icon: TrendingUp,
+    icon: '/market-data.svg',
     title: "Real Market Data",
     description: "Our practice environment uses live market data so when you go live, nothing feels different.",
-    color: "bg-highlight/20 text-highlight-foreground",
+    borderGradient: "linear-gradient(111.97deg, #CDB4DB 16.81%, #E9C46A 78.77%)",
   },
   {
-    icon: Shield,
-    title: "Safe & Secure",
-    description: "Bank-level security protects your real investments while you learn. Your funds are always in your control.",
-    color: "bg-accent/30 text-accent-foreground",
+    icon: '/learning.svg',
+    title: "Structured Learning",
+    description: "Progress through bite-sized lessons that explain blockchain and crypto concepts step by step.",
+    borderGradient: "linear-gradient(180deg, #E9C46A 0%, #F28482 100%)",
   },
 ];
 
 const Features = () => {
   return (
-    <section id="features" className="py-24 bg-muted/30">
+    <section id="features" className="py-24 bg-[#fefcfc]">
       <div className="container mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-[#F284821A] shadow-card  text-sm font-medium mb-4 text-[#F28482]">
             Features
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-[1.2]">
             Everything You Need to
-            <span className="text-gradient-coral"> Master Crypto</span>
+            <span className="block text-[#F28482] mt-1"> Master Crypto</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
-            From your first box to your first trade, we have got you covered with tools designed for real learning.
+          <p className="text-lg text-[#586574] leading-relaxed">
+            Explore blockchain concepts, practice through simulation using real market data, and understand crypto markets before using real money.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex flex-row items-center justify-center gap-[24px] flex-wrap">
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="group p-8 rounded-3xl bg-card shadow-card border border-border/50 hover:shadow-elevated hover:-translate-y-2 transition-all duration-300"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="relative w-[281px] h-[304px] rounded-[20px] p-[2px] shadow-card hover:shadow-elevated hover:-translate-y-2 transition-all duration-300"
+              style={{ background: feature.borderGradient }}
             >
-              <div className={`w-14 h-14 rounded-2xl ${feature.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                <feature.icon className="w-7 h-7" />
+              {/* Inner white card */}
+              <div className="relative w-full h-full rounded-[20px] bg-white">
+                {/* Icon - positioned absolutely */}
+                <div 
+                  className="absolute w-[55px] h-[55px] left-[31px] top-[30px] rounded-[15px] flex items-center justify-center"
+                >
+                  <Image 
+                    src={feature.icon} 
+                    alt={feature.title}
+                    width={55}
+                    height={55}
+                    className="object-contain"
+                  />
+                </div>
+                
+                {/* Title - positioned absolutely */}
+                <h3 
+                  className="absolute left-[29px] top-[109px] font-bold text-[20px] leading-[26px]"
+                  style={{ color: '#243242', fontFamily: 'Inter, sans-serif' }}
+                >
+                  {feature.title}
+                </h3>
+                
+                {/* Description - positioned absolutely */}
+                <p 
+                  className="absolute left-[32px] top-[145px] w-[221px] font-normal text-[16px] leading-[26px]"
+                  style={{ color: '#737F8C', fontFamily: 'Inter, sans-serif' }}
+                >
+                  {feature.description}
+                </p>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-foreground">{feature.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

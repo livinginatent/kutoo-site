@@ -20,14 +20,14 @@ const Footer = () => {
             <ul className="space-y-3">
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Features</a></li>
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</a></li>
-              <li><a href="/faq" className="text-muted-foreground hover:text-foreground transition-colors">FAQ</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">FAQ</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold text-foreground mb-4">Company</h4>
             <ul className="space-y-3">
-              <li><a href="/about" className="text-muted-foreground hover:text-foreground transition-colors">About</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">About</a></li>
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Blog</a></li>
               <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Careers</a></li>
             </ul>
