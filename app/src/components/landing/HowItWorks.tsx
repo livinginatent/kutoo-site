@@ -29,29 +29,55 @@ const HowItWorks = () => {
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Three Steps to
-            <span className="text-gradient-coral"> Crypto Confidence</span>
+            <span className="text-[#F28482]"> Crypto Confidence</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Our unique box system makes starting with crypto as easy as opening a present.
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="flex flex-row items-center justify-center gap-[24px] flex-wrap">
           {steps.map((step, index) => (
             <div key={index} className="relative">
               {/* Connector line */}
-              {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-16 left-[60%] w-[80%] h-0.5 bg-gradient-to-r from-border to-transparent" />
-              )}
+           
               
-              <div className="relative p-8 rounded-3xl bg-card shadow-card border border-border/50">
+              <div 
+                className="relative bg-card shadow-card border border-border/50 rounded-[20px] opacity-100"
+                style={{
+                  width: '377px',
+                  height: '210px',
+                }}
+              >
                 <div className={`absolute -top-4 -left-4 w-12 h-12 rounded-2xl ${step.accent} flex items-center justify-center shadow-elevated`}>
                   <span className="text-lg font-bold text-primary-foreground">{step.number}</span>
                 </div>
                 
-                <div className="pt-4">
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">{step.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed text-lg">{step.description}</p>
+                <div className="p-8 h-full flex flex-col justify-center">
+                  <h3 
+                    className="mb-4 text-foreground"
+                    style={{
+                      fontFamily: 'Inter, sans-serif',
+                      fontWeight: 700,
+                      fontSize: '22px',
+                      lineHeight: '26px',
+                      letterSpacing: '0%',
+                    }}
+                  >
+                    {step.title}
+                  </h3>
+                  <p 
+                    className="text-muted-foreground"
+                    style={{
+                      fontFamily: 'Inter, sans-serif',
+                      fontWeight: 400,
+                      fontSize: '16px',
+                      lineHeight: '26px',
+                      letterSpacing: '0%',
+                    }}
+                  >
+                    {step.description}
+                  </p>
                 </div>
               </div>
             </div>
