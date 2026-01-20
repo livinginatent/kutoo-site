@@ -1,15 +1,29 @@
+import Image from "next/image";
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <footer className="py-16 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">K</span>
+            <Link href="/" className="flex items-center gap-4 mb-4 hover:opacity-80 transition-opacity">
+              <div className="relative w-10 h-9 flex-shrink-0">
+                <Image
+                  src="/Logo.svg"
+                  alt="Kutoo Logo"
+                  fill
+                  className="object-contain"
+                />
               </div>
-              <span className="font-bold text-xl text-foreground">kutoo</span>
-            </div>
+              <div className="font-bold text-2xl" style={{ fontFamily: "'ADLaM Display', sans-serif" }}>
+                <span className="text-[#f28482]">K</span>
+                <span className="text-[#84a59d]">u</span>
+                <span className="text-[#cdb4db]">t</span>
+                <span className="text-[#84a59d]">o</span>
+                <span className="text-[#e9c46a]">o</span>
+              </div>
+            </Link>
             <p className="text-muted-foreground max-w-sm">
               The smartest way to start your crypto journey. Learn, practice, and invest with confidence.
             </p>

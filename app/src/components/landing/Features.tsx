@@ -51,6 +51,53 @@ const Features = () => {
               className="relative w-[281px] h-[304px] rounded-[20px] p-[2px] shadow-card hover:shadow-elevated hover:-translate-y-2 transition-all duration-300"
               style={{ background: feature.borderGradient }}
             >
+              {/* Crypto icon on top border for first box */}
+              {index === 0 && (
+                <div className="absolute top-[-27.5px] right-[10px] z-20">
+                  <Image 
+                    src="/crypto-kt.svg"
+                    alt="Crypto icon"
+                    width={55}
+                    height={55}
+                    className="object-contain"
+                  />
+                </div>
+              )}
+              {/* Investing icon on bottom border for second box */}
+              {index === 1 && (
+                <div className="absolute bottom-[-27.5px] right-[10px] z-20">
+                  <Image 
+                    src="/investing-kt.svg"
+                    alt="Investing icon"
+                    width={55}
+                    height={55}
+                    className="object-contain"
+                  />
+                </div>
+              )}
+              {/* Market icon on top border for third box */}
+              {index === 2 && (
+                <div className="absolute top-[-27.5px] right-[10px] z-20">
+                  <Image 
+                    src="/market-kt.svg"
+                    alt="Market icon"
+                    width={55}
+                    height={55}
+                    className="object-contain"
+                  />
+                </div>
+              )}
+              {index === 3 && (
+                <div className="absolute bottom-[-27.5px] right-[10px] z-20">
+                  <Image 
+                    src="/learning-kt.svg"
+                    alt="Market icon"
+                    width={55}
+                    height={55}
+                    className="object-contain"
+                  />
+                </div>
+              )}
               {/* Inner white card */}
               <div className="relative w-full h-full rounded-[20px] bg-white">
                 {/* Icon - positioned absolutely */}

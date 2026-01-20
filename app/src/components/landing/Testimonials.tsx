@@ -37,7 +37,7 @@ const Testimonials = () => {
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Loved by
-            <span className="text-gradient-coral"> 50,000+ Learners</span>
+            <span className="text-[#F28482]"> 1,000+ Learners</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Join a community of smart investors who started their crypto journey the right way.
