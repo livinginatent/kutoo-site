@@ -39,15 +39,15 @@ const Header = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#features" className="text-[#586574] hover:text-foreground transition-colors text-base">
+          <Link href="/#features" className="text-[#586574] hover:text-foreground transition-colors text-base">
             Features
-          </a>
-          <a href="#how-it-works" className="text-[#586574] hover:text-foreground transition-colors text-base">
+          </Link>
+          <Link href="/#how-it-works" className="text-[#586574] hover:text-foreground transition-colors text-base">
             How It Works
-          </a>
-          <a href="#testimonials" className="text-[#586574] hover:text-foreground transition-colors text-base">
+          </Link>
+          <Link href="/#testimonials" className="text-[#586574] hover:text-foreground transition-colors text-base">
             Reviews
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile Burger Menu Button */}
@@ -75,27 +75,27 @@ const Header = () => {
           {/* Menu Panel */}
           <nav className="fixed top-[73px] left-0 right-0 bg-[#fefcfc] border-b border-border/50 shadow-lg z-40 md:hidden">
             <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
-              <a
-                href="#features"
+              <Link
+                href="/#features"
                 onClick={closeMenu}
                 className="text-[#586574] hover:text-foreground transition-colors text-base py-2"
               >
                 Features
-              </a>
-              <a
-                href="#how-it-works"
+              </Link>
+              <Link
+                href="/#how-it-works"
                 onClick={closeMenu}
                 className="text-[#586574] hover:text-foreground transition-colors text-base py-2"
               >
                 How It Works
-              </a>
-              <a
-                href="#testimonials"
+              </Link>
+              <Link
+                href="/#testimonials"
                 onClick={closeMenu}
                 className="text-[#586574] hover:text-foreground transition-colors text-base py-2"
               >
                 Reviews
-              </a>
+              </Link>
             </div>
           </nav>
         </>

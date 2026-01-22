@@ -48,7 +48,7 @@ const Features = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="relative w-[281px] h-[304px] rounded-[20px] p-[2px] shadow-card hover:shadow-elevated hover:-translate-y-2 transition-all duration-300"
+              className="relative w-[281px] h-[304px] rounded-[20px] p-[2px] shadow-card hover:shadow-elevated "
               style={{ background: feature.borderGradient }}
             >
               {/* Crypto icon on top border for first box */}
