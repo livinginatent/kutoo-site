@@ -31,16 +31,16 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="py-24 bg-muted/30">
       <div className="container mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full bg-highlight/20 text-highlight-foreground text-sm font-medium mb-4">
             Reviews
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Loved by
-            <span className="text-[#F28482]"> 1,000+ Learners</span>
+            <span className="text-[#F28482]"> Learners Worldwide</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Join a community of smart investors who started their crypto journey the right way.
+            Join a community of smart investors who started their crypto journey the right way
           </p>
         </div>
         

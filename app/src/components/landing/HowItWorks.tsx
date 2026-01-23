@@ -2,19 +2,19 @@ const steps = [
   {
     number: "01",
     title: "Pick Your Box",
-    description: "Choose from Starter, Growth, or Pro boxes based on your investment goals.",
+    description: "Choose a curated box based on your learning goals, or build your own themed box.",
     accent: "bg-primary",
   },
   {
     number: "02",
     title: "Practice First",
-    description: "Use dummy coins to learn trading strategies in our risk-free sandbox environment.",
+    description: "Use simulated assets with real market data to explore in a risk-free environment.",
     accent: "bg-secondary",
   },
   {
     number: "03",
     title: "Go Live",
-    description: "When you are ready, switch to real trading with confidence. Your skills translate perfectly.",
+    description: "Connect your wallet and switch to real crypto seamlessly when you are confident.",
     accent: "bg-highlight",
   },
 ];
@@ -32,7 +32,7 @@ const HowItWorks = () => {
             <span className="text-[#F28482]"> Crypto Confidence</span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground">
-            Our unique box system makes starting with crypto as easy as opening a present.
+            Kutoo combines learning content with real market experience—so you learn crypto by doing.
           </p>
         </div>
         

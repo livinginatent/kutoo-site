@@ -1,6 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
 import Header from "../src/components/landing/Header";
 import Footer from "../src/components/landing/Footer";
 import Image from "next/image";
+import Link from "next/link";
 
 const values = [
   {
@@ -58,143 +60,11 @@ export default function About() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        {/* Hero Section */}
-        <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden bg-hero-gradient">
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="text-center max-w-3xl mx-auto">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-secondary/20 text-secondary text-sm font-medium mb-6">
-                About Us
-              </span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-[1.2]">
-                Making Crypto
-                <span className="block text-[#F28482] mt-2">Accessible to Everyone</span>
-              </h1>
-              <p className="text-lg md:text-xl text-[#586574] leading-relaxed">
-                We started Kutoo because we believe learning about cryptocurrency shouldn't be intimidating or risky. 
-                Our mission is to empower everyone to understand and participate in the crypto economy with confidence.
-              </p>
-            </div>
-          </div>
-        </section>
+ 
 
-        {/* Mission Section */}
-        <section className="py-16 md:py-24 bg-[#fefcfc]">
-          <div className="container mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <span className="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-primary text-sm font-medium mb-4">
-                  Our Mission
-                </span>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                  Democratizing Crypto Education
-                </h2>
-                <p className="text-lg text-[#586574] mb-6 leading-relaxed">
-                  Cryptocurrency is the future of finance, but the learning curve is steep. Traditional platforms 
-                  throw you into real trading immediately, which can be overwhelming and risky for beginners.
-                </p>
-                <p className="text-lg text-[#586574] leading-relaxed">
-                  Kutoo changes that. We've created a safe, structured learning environment where you can explore, 
-                  practice, and understand crypto at your own pace—without risking a single dollar until you're ready.
-                </p>
-              </div>
-              <div className="relative w-full h-[400px] md:h-[500px] rounded-[20px] overflow-hidden shadow-card">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/20 to-secondary/20" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="text-6xl mb-4">📦</div>
-                    <p className="text-xl font-semibold text-foreground">Learning Made Simple</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+ 
 
-        {/* Values Section */}
-        <section className="py-16 md:py-24 overflow-visible">
-          <div className="container mx-auto px-6">
-            <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-highlight/20 text-highlight-foreground text-sm font-medium mb-4">
-                Our Values
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                What We
-                <span className="text-[#F28482]"> Stand For</span>
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                These principles guide everything we do at Kutoo.
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-visible">
-              {values.map((value, index) => (
-                <div 
-                  key={index}
-                  className="relative rounded-[20px] p-[2px] shadow-card hover:shadow-elevated "
-                  style={{ background: value.gradient }}
-                >
-                  {/* SVG icon on top border for first box */}
-                  {index === 0 && (
-                    <div className="absolute top-[-27.5px] right-[10px] z-20">
-                      <Image 
-                        src="/crypto-kt.svg"
-                        alt="Crypto icon"
-                        width={55}
-                        height={55}
-                        className="object-contain"
-                      />
-                    </div>
-                  )}
-                  {/* SVG icon on bottom border for second box */}
-                  {index === 1 && (
-                    <div className="absolute bottom-[-27.5px] right-[10px] z-20">
-                      <Image 
-                        src="/investing-kt.svg"
-                        alt="Investing icon"
-                        width={55}
-                        height={55}
-                        className="object-contain"
-                      />
-                    </div>
-                  )}
-                  {/* SVG icon on top border for third box */}
-                  {index === 2 && (
-                    <div className="absolute top-[-27.5px] right-[10px] z-20">
-                      <Image 
-                        src="/market-kt.svg"
-                        alt="Market icon"
-                        width={55}
-                        height={55}
-                        className="object-contain"
-                      />
-                    </div>
-                  )}
-                  {/* SVG icon on bottom border for fourth box */}
-                  {index === 3 && (
-                    <div className="absolute bottom-[-27.5px] right-[10px] z-20">
-                      <Image 
-                        src="/learning-kt.svg"
-                        alt="Learning icon"
-                        width={55}
-                        height={55}
-                        className="object-contain"
-                      />
-                    </div>
-                  )}
-                  <div className="relative w-full h-full rounded-[20px] bg-card p-6">
-                    <div className="text-4xl mb-4">{value.icon}</div>
-                    <h3 className="text-xl font-bold text-foreground mb-3" style={{ fontFamily: 'Inter, sans-serif' }}>
-                      {value.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
-                      {value.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        
 
         {/* Story Section */}
         <section className="py-16 md:py-24 bg-muted/30">
@@ -309,7 +179,7 @@ export default function About() {
                   <p className="text-lg md:text-xl text-[#737F8C]/80 mb-8">
                     Join thousands of learners who are building their crypto confidence with Kutoo.
                   </p>
-                  <a 
+                  <Link 
                     href="/"
                     className="inline-flex items-center gap-2 px-8 py-4 bg-[#cdb4db] text-foreground rounded-full font-semibold hover:bg-[#cdb4db]/90 transition-colors"
                   >
@@ -317,7 +187,7 @@ export default function About() {
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
