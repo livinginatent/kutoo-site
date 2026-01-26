@@ -5,6 +5,7 @@ import Footer from "../src/components/landing/Footer";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const faqCategories = [
   {
@@ -12,41 +13,38 @@ const faqCategories = [
     questions: [
       {
         question: "What is Kutoo?",
-        answer: "Kutoo is a crypto learning platform that lets you practice trading with simulated assets before using real money. We use a unique 'box' system where each box contains curated cryptocurrencies and educational content to help you learn at your own pace."
+        answer: "Kutoo is a crypto learning app that lets you practice trading with simulated money before using real money. You use simulated funds to learn how different crypto portfolios behave over time without financial risk. It also offers structured educational content to help you understand crypto and blockchain fundamentals at your own pace. "
       },
       {
         question: "Do I need any crypto experience to use Kutoo?",
-        answer: "Not at all! Kutoo is designed for complete beginners. Our structured learning path guides you through everything from basic blockchain concepts to advanced trading strategies. You can start with zero knowledge and build your confidence gradually."
+        answer: "Not at all. Kutoo is designed for complete beginners. Our structured learning path guides you through everything from basic blockchain concepts, allowing you to start with zero knowledge and build confidence gradually. "
       },
       {
         question: "How do I get started?",
-        answer: "Simply download the app and create an account. You'll start with a free Starter box that introduces you to basic crypto concepts. From there, you can choose additional boxes based on your interests and learning goals."
+        answer: "Simply download the app and create an account. Everything else follows from there."
       },
       {
         question: "Is Kutoo free?",
-        answer: "Yes! Kutoo offers a free tier that includes access to our Starter box and practice trading environment. Premium boxes and advanced features are available through our subscription plans."
+        answer: "Yes. Kutoo’s simulation mode is completely free and designed purely for learning. You can explore crypto, practice with simulated assets, and access educational content at no cost. Kutoo also offers a real-money mode, available only in selected countries. In this mode, transactions use real money and incur a 1% transaction fee."
       }
     ]
   },
   {
-    title: "Boxes & Learning",
+    title: "Learning",
     questions: [
       {
         question: "What are crypto boxes?",
-        answer: "Crypto boxes are curated collections of cryptocurrencies paired with educational content. Each box focuses on a specific theme (like DeFi, NFTs, or Layer 2 solutions) and includes lessons, practice exercises, and simulated trading opportunities."
+        answer: "Crypto boxes are curated collections of cryptocurrencies. Each box focuses on a specific theme (such as DeFi, top cryptocurrencies)."
       },
       {
         question: "Can I create my own box?",
-        answer: "Yes! Once you're comfortable with the platform, you can create custom boxes with cryptocurrencies of your choice. This lets you practice trading strategies with specific coins you're interested in."
+        answer: "Yes. Once you are comfortable with the app, you can create custom boxes with cryptocurrencies of your choice. "
       },
       {
-        question: "How long does it take to complete a box?",
-        answer: "It depends on the box and your learning pace. Starter boxes typically take 1-2 weeks if you spend 30 minutes daily. More advanced boxes can take 3-4 weeks. You can learn at your own speed—there's no rush!"
+        question: "What learning content does Kutoo offer?",
+        answer: "Kutoo’s learning content is structured into clear levels and topics that build progressively. Each concept is explained in a simple, practical way, with short quizzes at the end of each topic. This approach helps users move from basic ideas to more advanced concepts while learning alongside simulated trading. "
       },
-      {
-        question: "What happens after I complete a box?",
-        answer: "After completing a box, you'll have a solid understanding of the cryptocurrencies it covered. You can then move to real trading with confidence, or continue learning with more advanced boxes. Your progress is always saved."
-      }
+    
     ]
   },
   {
@@ -54,7 +52,7 @@ const faqCategories = [
     questions: [
       {
         question: "Is the practice trading environment realistic?",
-        answer: "Absolutely! Our practice environment uses real-time market data from actual exchanges. The prices, trends, and market movements you see are identical to what you'd experience in real trading. The only difference is you're using simulated funds."
+        answer: "Absolutely. The practice environment uses real-time market data from actual exchanges. The prices, trends, and market movements you see are identical to what you'd experience in real trading. The only difference is you are using simulated funds."
       },
       {
         question: "Can I lose money in practice mode?",
@@ -62,11 +60,11 @@ const faqCategories = [
       },
       {
         question: "How do I know when I'm ready for real trading?",
-        answer: "You'll know you're ready when you feel confident understanding market trends, can explain your trading decisions, and have consistently made good choices in practice mode. There's no pressure—take as much time as you need."
+        answer: "You will know you are ready when you feel confident interpreting market trends, can clearly explain your trading decisions, and have consistently made sound choices in practice mode. There is no pressure; take as much time as you need and move at your own pace."
       },
       {
         question: "Can I switch between practice and real trading?",
-        answer: "Yes! You can always switch back to practice mode if you want to test new strategies or refresh your skills. Many users continue using practice mode even after starting real trading."
+        answer: "Yes, but only in countries where real trading is available. In most regions, Kutoo is available exclusively in simulation mode for learning purposes. If you are in a country where Kutoo’s real trading mode is not available, you can still practice for free in simulation mode and use any exchange to trade real money when you are ready. Many users continue using practice mode even after starting real trading."
       }
     ]
   },
@@ -75,19 +73,19 @@ const faqCategories = [
     questions: [
       {
         question: "How do I start real trading on Kutoo?",
-        answer: "When you're ready, you can connect your wallet or exchange account to Kutoo. We'll guide you through the setup process step by step. You can start with small amounts and gradually increase as you gain confidence."
+        answer: "When you are ready, you can connect your wallet to Kutoo. We will guide you through the setup process step by step. You can start with small amounts and gradually increase as you gain confidence."
       },
       {
         question: "Is my money safe?",
-        answer: "Kutoo partners with reputable exchanges and uses industry-standard security measures. However, all crypto trading carries risk. We recommend starting small, never investing more than you can afford to lose, and continuing to use our educational resources."
+        answer: "Kutoo integrates directly with decentralized exchanges and applies industry-standard security practices. That said, all cryptocurrency trading involves risk. We encourage users to start small, never invest more than they can afford to lose, and continue using Kutoo's educational resources."
       },
       {
         question: "What fees does Kutoo charge?",
-        answer: "Kutoo charges a small subscription fee for premium features. Trading fees are set by the exchanges we partner with, and we'll always show you the fees before you make any trades."
+        answer: "Kutoo charges a 1% transaction fee on real-money transfers. The simulated version is free to use."
       },
       {
         question: "Can I withdraw my funds anytime?",
-        answer: "Yes, you maintain full control of your funds. You can withdraw at any time through your connected wallet or exchange account. There are no lock-in periods or restrictions."
+        answer: "Yes, you can withdraw at any time through your connected wallet. There are no lock-in periods or restrictions."
       }
     ]
   },
@@ -96,19 +94,15 @@ const faqCategories = [
     questions: [
       {
         question: "How do I reset my password?",
-        answer: "You can reset your password from the login screen by clicking 'Forgot Password.' We'll send a reset link to your registered email address."
+        answer: "You can reset your password from the login screen by clicking 'Forgot Password.' We will send a reset link to your registered email address."
       },
       {
         question: "Can I use Kutoo on multiple devices?",
-        answer: "Yes! Your Kutoo account syncs across all your devices. You can start a lesson on your phone and continue on your tablet or computer."
+        answer: "Yes, your Kutoo account syncs across all your devices. You can start a lesson on your phone and continue on your tablet."
       },
       {
         question: "How do I contact support?",
-        answer: "You can reach our support team through the in-app chat, email us at support@kutoo.com, or visit our Help Center. We typically respond within 24 hours."
-      },
-      {
-        question: "Do you offer refunds?",
-        answer: "We offer a 30-day money-back guarantee on all subscription plans. If you're not satisfied with Kutoo, contact our support team for a full refund."
+        answer: "You can reach our support team through the in-app chat, email us at support@kutoo.app, or visit our Help Center. We typically respond within 24 hours."
       }
     ]
   }
@@ -259,12 +253,12 @@ export default function FAQ() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     </a>
-                    <a 
+                    <Link 
                       href="/"
                       className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-[#cdb4db] text-[#cdb4db] rounded-full font-semibold hover:bg-[#cdb4db]/10 transition-colors"
                     >
                       Back to Home
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

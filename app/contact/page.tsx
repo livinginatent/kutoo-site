@@ -81,11 +81,10 @@ export default function Contact() {
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-[1.2]">
                 Get in Touch
-                <span className="block text-[#F28482] mt-2">We're Here to Help</span>
+                <span className="block text-[#F28482] mt-2">We Are Here to Help</span>
               </h1>
               <p className="text-lg md:text-xl text-[#586574] leading-relaxed">
-                Have a question, suggestion, or need support? We'd love to hear from you. 
-                Reach out and we'll get back to you as soon as possible.
+               Have a question, suggestion, or need support? We would love to hear from you. Reach out and we will get back to you as soon as possible.
               </p>
             </div>
           </div>

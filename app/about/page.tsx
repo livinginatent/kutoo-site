@@ -33,24 +33,31 @@ const values = [
 
 const team = [
   {
-    name: "Alex Rivera",
-    role: "Founder & CEO",
-    bio: "Former fintech engineer with 10+ years building trading platforms. Passionate about making crypto accessible to everyone.",
-    avatar: "AR",
+    name: "Nihad Aliyev",
+    role: "Founder",
+    bio: "An academic and practitioner with experience in financial markets and FinTech applications. Founder of multiple technology and education initiatives.",
+    avatar: "NA",
     avatarBg: "bg-primary",
   },
   {
-    name: "Jordan Kim",
-    role: "Head of Education",
-    bio: "Crypto educator and content creator. Has taught over 50,000 students through online courses and workshops.",
-    avatar: "JK",
+    name: "Toghrul Allahverdi",
+    role: "Software Engineer",
+    bio: "Backend developer specializing in scalable systems and blockchain integration. Builds robust APIs and infrastructure to power Kutoo.",
+    avatar: "TA",
     avatarBg: "bg-secondary",
   },
   {
-    name: "Sam Taylor",
-    role: "Product Lead",
-    bio: "UX designer turned product manager. Believes great products should be both beautiful and educational.",
-    avatar: "ST",
+    name: "Ali Hilalov",
+    role: "Software Engineer",
+    bio: "Mobile developer focused on creating intuitive iOS and Android apps. Ensures Kutoo's learning platform is accessible and engaging on every device.",
+    avatar: "AH",
+    avatarBg: "bg-accent",
+  },
+  {
+    name: "Suleyman Eminbeyli",
+    role: "Software Engineer",
+    bio: "Frontend developer creating user-friendly interfaces. Transforms complex crypto concepts into simple, interactive learning experiences.",
+    avatar: "SE",
     avatarBg: "bg-accent",
   },
 ];
@@ -60,13 +67,8 @@ export default function About() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
- 
-
- 
-
-        
-
-        {/* Story Section */}
+         
+       {/* Story Section */}
         <section className="py-16 md:py-24 bg-muted/30">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
@@ -76,29 +78,22 @@ export default function About() {
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
                   How Kutoo
-                  <span className="text-[#F28482]"> Was Born</span>
+                  <span className="text-[#F28482]"> Started</span>
                 </h2>
               </div>
               
               <div className="space-y-6 text-lg text-[#586574] leading-relaxed">
                 <p>
-                  Kutoo started as a simple idea: what if learning crypto was as fun and engaging as opening a present? 
-                  Our founder, Alex, watched friends and family struggle with traditional crypto platforms—they were either 
-                  too technical, too risky, or both.
+                  Kutoo (meaning "box" in Turkish) began with a simple idea. What if learning crypto could be engaging without being risky?
                 </p>
                 <p>
-                  After months of research and talking to hundreds of potential users, we realized the problem wasn't 
-                  just about features—it was about approach. People needed a way to learn by doing, without the fear 
-                  of losing real money.
+                  While teaching cryptocurrencies and blockchain at Macquarie University in Australia, our founder, Dr. Nihad Aliyev, observed a recurring problem. Students struggled with existing crypto platforms—they were either too technical, too risky, or both. The issue was not a lack of interest, but the absence of a safe way to learn by doing.
                 </p>
                 <p>
-                  That's when the "box" concept was born. Each box is a curated learning experience that introduces you 
-                  to cryptocurrencies in a structured, safe way. You practice with simulated assets, learn through 
-                  interactive lessons, and only move to real trading when you feel confident.
+                  This led to the idea behind Kutoo: bringing simulated crypto trading, thematic crypto boxes, and structured learning together in a simple, user-friendly mobile app. Users practice with simulated crypto boxes, learn through interactive lessons, and move to real trading only when they feel ready.
                 </p>
                 <p>
-                  Today, Kutoo has helped thousands of people start their crypto journey. We're just getting started, 
-                  and we're excited to have you join us.
+                  Today, Kutoo has helped many people take their first steps into crypto. We are still at an early stage, and we look forward to having you join us on this journey.
                 </p>
               </div>
             </div>
@@ -121,7 +116,7 @@ export default function About() {
               </p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
               {team.map((member, index) => (
                 <div 
                   key={index}
