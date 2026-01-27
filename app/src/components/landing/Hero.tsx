@@ -13,7 +13,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.3] pb-4 overflow-visible">
-              Unbox Your
+              Start Your
               <span className="block text-gradient-coral pt-1 pb-2">Crypto Journey</span>
             </h1>
             

@@ -40,10 +40,10 @@ const CTA = () => {
             
             <div className="relative z-10 text-center max-w-3xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-[#243242] mb-6">
-              Ready to Unbox Your First Crypto?
+              Ready to Start Your First Crypto?
             </h2>
             <p className="text-xl text-[#737F8C]/80 mb-10">
-              Join 50,000+ learners who started their crypto journey with Kutoo. 
+              Join many learners who started their crypto journey with Kutoo. 
               No experience needed—just curiosity.
             </p>
             

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import Header from "../src/components/landing/Header";
@@ -91,78 +92,7 @@ export default function Contact() {
         </section>
 
         {/* Contact Methods */}
-        <section className="py-16 md:py-24 bg-[#fefcfc] overflow-visible">
-          <div className="container mx-auto px-6">
-            <div className="grid md:grid-cols-3 gap-6 mb-16 overflow-visible">
-              {contactMethods.map((method, index) => {
-                const IconComponent = method.icon;
-                return (
-                  <a
-                    key={index}
-                    href={method.link}
-                    className="block"
-                  >
-                    <div 
-                      className="relative rounded-[20px] p-[2px] shadow-card hover:shadow-elevated  h-full"
-                      style={{ background: method.gradient }}
-                    >
-                      {/* SVG icon on top border for first box */}
-                      {index === 0 && (
-                        <div className="absolute top-[-27.5px] right-[10px] z-20">
-                          <Image 
-                            src="/crypto-kt.svg"
-                            alt="Crypto icon"
-                            width={55}
-                            height={55}
-                            className="object-contain"
-                          />
-                        </div>
-                      )}
-                      {/* SVG icon on bottom border for second box */}
-                      {index === 1 && (
-                        <div className="absolute bottom-[-27.5px] right-[10px] z-20">
-                          <Image 
-                            src="/investing-kt.svg"
-                            alt="Investing icon"
-                            width={55}
-                            height={55}
-                            className="object-contain"
-                          />
-                        </div>
-                      )}
-                      {/* SVG icon on top border for third box */}
-                      {index === 2 && (
-                        <div className="absolute top-[-27.5px] right-[10px] z-20">
-                          <Image 
-                            src="/market-kt.svg"
-                            alt="Market icon"
-                            width={55}
-                            height={55}
-                            className="object-contain"
-                          />
-                        </div>
-                      )}
-                      <div className="relative w-full h-full rounded-[20px] bg-card p-6">
-                        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                          <IconComponent className="w-6 h-6 text-primary" />
-                        </div>
-                        <h3 className="text-xl font-bold text-foreground mb-2" style={{ fontFamily: 'Inter, sans-serif' }}>
-                          {method.title}
-                        </h3>
-                        <p className="text-muted-foreground mb-3 text-sm" style={{ fontFamily: 'Inter, sans-serif' }}>
-                          {method.description}
-                        </p>
-                        <p className="text-foreground font-medium" style={{ fontFamily: 'Inter, sans-serif' }}>
-                          {method.contact}
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                );
-              })}
-            </div>
-          </div>
-        </section>
+        
 
         {/* Contact Form Section */}
         <section className="py-16 md:py-24">
@@ -327,45 +257,7 @@ export default function Contact() {
         </section>
 
         {/* Additional Info Section */}
-        <section className="py-16 md:py-24 bg-muted/30">
-          <div className="container mx-auto px-6">
-            <div className="max-w-4xl mx-auto">
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-card border border-border/50 rounded-[20px] p-8 shadow-card">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <MessageSquare className="w-6 h-6 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-bold text-foreground" style={{ fontFamily: 'Inter, sans-serif' }}>
-                      Response Time
-                    </h3>
-                  </div>
-                  <p className="text-muted-foreground leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
-                    We typically respond to all inquiries within 24 hours during business days. 
-                    For urgent matters, please call us directly.
-                  </p>
-                </div>
-
-                <div className="bg-card border border-border/50 rounded-[20px] p-8 shadow-card">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center">
-                      <Mail className="w-6 h-6 text-secondary" />
-                    </div>
-                    <h3 className="text-xl font-bold text-foreground" style={{ fontFamily: 'Inter, sans-serif' }}>
-                      Other Ways to Reach Us
-                    </h3>
-                  </div>
-                  <p className="text-muted-foreground leading-relaxed mb-3" style={{ fontFamily: 'Inter, sans-serif' }}>
-                    <strong className="text-foreground">Privacy inquiries:</strong> privacy@kutoo.com
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
-                    <strong className="text-foreground">Partnerships:</strong> partnerships@kutoo.com
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+     
       </main>
       <Footer />
     </div>

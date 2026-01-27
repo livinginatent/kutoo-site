@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: "Sarah Chen",
     role: "First-time Investor",
-    content: "I was terrified of losing money in crypto. Kutoo let me practice for 3 months before I touched real money. Now I trade with confidence!",
+    content: "I was nervous about crypto at first. Kutoo gave me a safe way to learn and practice for a few months before exploring real markets. That experience helped me feel more comfortable navigating crypto on my own.",
     rating: 5,
     avatar: "SC",
     avatarBg: "bg-primary",
@@ -12,7 +12,7 @@ const testimonials = [
   {
     name: "Marcus Johnson",
     role: "College Student",
-    content: "The box concept is genius. I got exposed to coins I never would have picked myself, and two of them became my best performers.",
+    content: "The box concept made it easy to explore different crypto assets. It helped me understand how different projects work and how people build diversified portfolios.",
     rating: 5,
     avatar: "MJ",
     avatarBg: "bg-secondary",
@@ -20,7 +20,7 @@ const testimonials = [
   {
     name: "Priya Patel",
     role: "Software Developer",
-    content: "As someone who understands tech but not finance, Kutoo bridged that gap perfectly. The learning curve was actually fun.",
+    content: "I understand technology, but finance was new to me. Kutoo explained concepts in a clear, hands-on way, and the learning process felt engaging rather than overwhelming.",
     rating: 5,
     avatar: "PP",
     avatarBg: "bg-accent",

@@ -245,7 +245,7 @@ export default function FAQ() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a 
-                      href="mailto:support@kutoo.com"
+                      href="/contact"
                       className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#cdb4db] text-foreground rounded-full font-semibold hover:bg-[#cdb4db]/90 transition-colors"
                     >
                       Contact Support
