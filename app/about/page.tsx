@@ -33,32 +33,32 @@ const values = [
 
 const team = [
   {
-    name: "Nihad Aliyev",
+    name: "Nihad",
     role: "Founder",
     bio: "An academic and practitioner with experience in financial markets and FinTech applications. Founder of multiple technology and education initiatives.",
-    avatar: "NA",
+    avatar: "N",
     avatarBg: "bg-primary",
   },
   {
-    name: "Toghrul Allahverdi",
+    name: "Toghrul",
     role: "Software Engineer",
     bio: "Backend developer specializing in scalable systems and blockchain integration. Builds robust APIs and infrastructure to power Kutoo.",
-    avatar: "TA",
+    avatar: "T",
     avatarBg: "bg-secondary",
   },
   {
-    name: "Ali Hilalov",
+    name: "Ali",
     role: "Software Engineer",
     bio: "Mobile developer focused on creating intuitive iOS and Android apps. Ensures Kutoo's learning platform is accessible and engaging on every device.",
-    avatar: "AH",
+    avatar: "A",
     avatarBg: "bg-accent",
   },
   {
-    name: "Suleyman Eminbeyli",
+    name: "Suleyman",
     role: "Software Engineer",
     bio: "Frontend developer creating user-friendly interfaces. Transforms complex crypto concepts into simple, interactive learning experiences.",
-    avatar: "SE",
-    avatarBg: "bg-accent",
+    avatar: "S",
+    avatarBg: "bg-highlight",
   },
 ];
 

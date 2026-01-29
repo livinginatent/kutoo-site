@@ -184,6 +184,7 @@ export default function Contact() {
                       >
                         <option value="">Select a subject</option>
                         <option value="general">General Inquiry</option>
+                        <option value="privacy">Privacy Team</option>
                         <option value="support">Technical Support</option>
                         <option value="billing">Billing Question</option>
                         <option value="feedback">Feedback & Suggestions</option>

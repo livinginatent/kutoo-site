@@ -171,7 +171,7 @@ export default function FAQ() {
               </h1>
               <p className="text-lg md:text-xl text-[#586574] leading-relaxed">
                 Everything you need to know about Kutoo. Can't find what you're looking for? 
-                <a href="#contact" className="text-[#F28482] hover:underline ml-1">Contact our support team</a>.
+                <a href="/contact" className="text-[#F28482] hover:underline ml-1">Contact our support team</a>.
               </p>
             </div>
           </div>

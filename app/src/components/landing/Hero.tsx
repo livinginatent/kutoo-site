@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -22,22 +23,28 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="group bg-[#cdb4db] text-[#243242] hover:bg-[#cdb4db]/90"
-              >
-                Download Kutoo
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <Link href="/download">
+                <Button 
+                  size="lg" 
+                  className="group bg-[#cdb4db] text-[#243242] hover:bg-[#cdb4db]/90"
+                >
+                  Download Kutoo
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="group border-[#cdb4db] text-[#cdb4db] hover:bg-[#cdb4db]/10"
+                className="group border-[#cdb4db] text-[#cdb4db] hover:bg-[#cdb4db]/10 cursor-not-allowed opacity-70"
+                disabled
               >
                 <Play className="w-5 h-5" />
                 Watch Demo
               </Button>
             </div>
+            <p className="text-sm text-muted-foreground pt-1">
+              Demo video is <span className="font-semibold text-[#cdb4db]">coming soon</span>. Stay tuned!
+            </p>
             
             <div className="flex items-center gap-8 pt-4">
               <div className="text-center">
