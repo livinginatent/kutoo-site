@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const CTA = () => {
   return (
@@ -48,14 +49,16 @@ const CTA = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/download">
               <Button 
                 variant="secondary" 
                 size="lg" 
                 className="bg-[#cdb4db] text-foreground hover:bg-card/90 group"
-              >
+                >
                 Download the App
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
+                </Link>
             </div>
             
             <p className="mt-6 text-sm text-[#243242]/60">

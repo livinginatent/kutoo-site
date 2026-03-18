@@ -175,7 +175,7 @@ export default function About() {
                     Join thousands of learners who are building their crypto confidence with Kutoo.
                   </p>
                   <Link 
-                    href="/"
+                    href="/download"
                     className="inline-flex items-center gap-2 px-8 py-4 bg-[#cdb4db] text-foreground rounded-full font-semibold hover:bg-[#cdb4db]/90 transition-colors"
                   >
                     Get Started
