@@ -29,7 +29,7 @@ export default function Privacy() {
         </section>
 
         {/* Privacy Policy Content */}
-        <section className="py-16 md:py-24">//
+        <section className="py-16 md:py-24">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
               <div className="rounded-3xl bg-card border border-border/60 shadow-card p-8 md:p-12">
