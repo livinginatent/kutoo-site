@@ -50,10 +50,7 @@ export default function Download() {
                   </Link>
                 </div>
 
-                <p className="text-sm text-muted-foreground">
-                  Coming soon to both the Apple App Store and Google Play Store.{" "}
-                  Update the links on this page once your apps are live.
-                </p>
+             
               </div>
 
               <div className="relative">

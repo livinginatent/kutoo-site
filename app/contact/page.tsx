@@ -4,8 +4,7 @@
 import Header from "../src/components/landing/Header";
 import Footer from "../src/components/landing/Footer";
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send, MessageSquare } from "lucide-react";
-import Image from "next/image";
+import { Send } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -29,45 +28,32 @@ export default function Contact() {
     setIsSubmitting(true);
     setSubmitStatus("idle");
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send contact form");
+      }
+
       setIsSubmitting(false);
       setSubmitStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
-      
+
       // Reset success message after 5 seconds
       setTimeout(() => {
         setSubmitStatus("idle");
       }, 5000);
-    }, 1500);
+    } catch {
+      setIsSubmitting(false);
+      setSubmitStatus("error");
+    }
   };
-
-  const contactMethods = [
-    {
-      icon: Mail,
-      title: "Email Us",
-      description: "Send us an email anytime",
-      contact: "support@kutoo.com",
-      link: "mailto:support@kutoo.com",
-      gradient: "linear-gradient(66.49deg, #F28482 14.51%, #84A59D 95.46%)",
-    },
-    {
-      icon: Phone,
-      title: "Call Us",
-      description: "Mon-Fri from 9am to 6pm",
-      contact: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
-      gradient: "linear-gradient(158.31deg, #84A59D 3.77%, #CDB4DB 85.77%)",
-    },
-    {
-      icon: MapPin,
-      title: "Visit Us",
-      description: "Our office location",
-      contact: "123 Crypto Street, San Francisco, CA 94105",
-      link: "#",
-      gradient: "linear-gradient(111.97deg, #CDB4DB 16.81%, #E9C46A 78.77%)",
-    },
-  ];
 
   return (
     <div className="min-h-screen bg-background">
