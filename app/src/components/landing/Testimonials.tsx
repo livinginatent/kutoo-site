@@ -4,7 +4,8 @@ const testimonials = [
   {
     name: "Sarah Chen",
     role: "First-time Investor",
-    content: "I was nervous about crypto at first. Kutoo gave me a safe way to learn and practice for a few months before exploring real markets. That experience helped me feel more comfortable navigating crypto on my own.",
+    content:
+      "I was nervous about crypto at first. Kutoo gave me a safe way to learn and practice for a few months before exploring real markets. That experience helped me feel more comfortable navigating crypto on my own.",
     rating: 5,
     avatar: "SC",
     avatarBg: "bg-primary",
@@ -12,7 +13,8 @@ const testimonials = [
   {
     name: "Marcus Johnson",
     role: "College Student",
-    content: "The box concept made it easy to explore different crypto assets. It helped me understand how different projects work and how people build diversified portfolios.",
+    content:
+      "The box concept made it easy to explore different crypto assets. It helped me understand how different projects work and how people build diversified portfolios.",
     rating: 5,
     avatar: "MJ",
     avatarBg: "bg-secondary",
@@ -20,7 +22,8 @@ const testimonials = [
   {
     name: "Priya Patel",
     role: "Software Developer",
-    content: "I understand technology, but finance was new to me. Kutoo explained concepts in a clear, hands-on way, and the learning process felt engaging rather than overwhelming.",
+    content:
+      "I understand technology, but finance was new to me. Kutoo explained concepts in a clear, hands-on way, and the learning process felt engaging rather than overwhelming.",
     rating: 5,
     avatar: "PP",
     avatarBg: "bg-accent",
@@ -40,33 +43,45 @@ const Testimonials = () => {
             <span className="text-[#F28482]"> Learners Worldwide</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Join a community of smart investors who started their crypto journey the right way
+            Join a community of smart investors who started their crypto journey
+            the right way
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div 
+            <div
               key={index}
-              className="flex flex-col justify-between h-[360px] p-8 rounded-3xl bg-card shadow-card border border-border/50 hover:shadow-elevated transition-all duration-300"
+              className="flex flex-col justify-between h-auto p-8 rounded-3xl bg-card shadow-card border border-border/50 hover:shadow-elevated transition-all duration-300"
             >
               <div className="flex gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-highlight text-highlight" />
+                  <Star
+                    key={i}
+                    className="w-5 h-5 fill-highlight text-highlight"
+                  />
                 ))}
               </div>
-              
+
               <p className="text-foreground text-lg leading-relaxed mb-8">
                 "{testimonial.content}"
               </p>
-              
+
               <div className="flex items-center gap-4">
-                <div className={`w-12 h-12 rounded-full ${testimonial.avatarBg} flex items-center justify-center`}>
-                  <span className="text-primary-foreground font-semibold">{testimonial.avatar}</span>
+                <div
+                  className={`w-12 h-12 rounded-full ${testimonial.avatarBg} flex items-center justify-center`}
+                >
+                  <span className="text-primary-foreground font-semibold">
+                    {testimonial.avatar}
+                  </span>
                 </div>
                 <div>
-                  <div className="font-semibold text-foreground">{testimonial.name}</div>
-                  <div className="text-sm text-muted-foreground">{testimonial.role}</div>
+                  <div className="font-semibold text-foreground">
+                    {testimonial.name}
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {testimonial.role}
+                  </div>
                 </div>
               </div>
             </div>

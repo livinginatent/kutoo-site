@@ -62,7 +62,7 @@ export default function Download() {
                     alt="Kutoo app preview"
                     width={1000}
                     height={1000}
-                    className="mx-auto w-full max-w-[300px] h-auto"
+                    className="mx-auto w-full max-w-[270px] h-auto"
                   />
                 </div>
               </div>
