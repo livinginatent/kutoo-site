@@ -59,16 +59,14 @@ export default function Download() {
               <div className="relative">
                 <div className="absolute -top-10 -right-6 w-40 h-40 rounded-full bg-secondary/20 blur-3xl" />
                 <div className="absolute -bottom-10 -left-6 w-48 h-48 rounded-full bg-accent/20 blur-3xl" />
-                <div className="relative rounded-[2rem] bg-[#fefcfc] border border-border/60 shadow-card p-6 md:p-8">
-                  <div className="aspect-[9/16] w-full max-w-xs mx-auto rounded-[2rem] bg-gradient-to-b from-[#243242] via-[#243242] to-[#111827] overflow-hidden flex items-center justify-center">
-                    <Image
-                      src="/new-hero.svg"
-                      alt="Kutoo app preview"
-                      width={320}
-                      height={640}
-                      className="object-contain"
-                    />
-                  </div>
+                <div className="relative">
+                  <Image
+                    src="/Download.png"
+                    alt="Kutoo app preview"
+                    width={1000}
+                    height={1000}
+                    className="mx-auto w-full max-w-[300px] h-auto"
+                  />
                 </div>
               </div>
             </div>
