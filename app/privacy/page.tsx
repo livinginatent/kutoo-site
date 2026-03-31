@@ -21,9 +21,7 @@ export default function Privacy() {
               <p className="text-lg md:text-xl text-[#586574] leading-relaxed">
                 We are committed to protecting your personal information and being transparent about how we collect, use, and share your data.
               </p>
-              <p className="text-sm text-muted-foreground mt-4">
-                Last updated: January 2026
-              </p>
+            
             </div>
           </div>
         </section>

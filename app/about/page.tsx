@@ -67,12 +67,11 @@ export default function About() {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-         
-       {/* Story Section */}
+        {/* Story Section */}
         <section className="py-16 md:py-24 bg-muted/30">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
+              <div className="text-center mt-4 mb-12">
                 <span className="inline-block px-4 py-1.5 rounded-full bg-accent/20 text-accent-foreground text-sm font-medium mb-4">
                   Our Story
                 </span>
@@ -81,19 +80,33 @@ export default function About() {
                   <span className="text-[#F28482]"> Started</span>
                 </h2>
               </div>
-              
+
               <div className="space-y-6 text-lg text-[#586574] leading-relaxed">
                 <p>
-                  Kutoo (meaning "box" in Turkish) began with a simple idea. What if learning crypto could be engaging without being risky?
+                  Kutoo (meaning "box" in Turkish) began with a simple idea.
+                  What if learning crypto could be engaging without putting your
+                  money at risk?
                 </p>
                 <p>
-                  While teaching cryptocurrencies and blockchain at Macquarie University in Australia, our founder, Dr. Nihad Aliyev, observed a recurring problem. Students struggled with existing crypto platforms—they were either too technical, too risky, or both. The issue was not a lack of interest, but the absence of a safe way to learn by doing.
+                  While teaching Fintech at Macquarie University and University
+                  of Technology Sydney in Australia, our founder, Dr. Nihad
+                  Aliyev, noticed a recurring problem. Students struggled with
+                  existing crypto platforms. They were either too technical, too
+                  risky, or both. The issue wasn't a lack of interest, but the
+                  absence of a safe way to learn by doing.
                 </p>
                 <p>
-                  This led to the idea behind Kutoo: bringing simulated crypto trading, thematic crypto boxes, and structured learning together in a simple, user-friendly mobile app. Users practice with simulated crypto boxes, learn through interactive lessons, and move to real trading only when they feel ready.
+                  This led to the idea behind Kutoo. Simulated crypto trading,
+                  thematic crypto boxes, and structured learning, all brought
+                  together in a simple, user-friendly mobile app. Users practice
+                  with simulated crypto boxes, learn through interactive
+                  lessons, and move to real trading only when they feel ready.
                 </p>
                 <p>
-                  Today, Kutoo has helped many people take their first steps into crypto. We are still at an early stage, and we look forward to having you join us on this journey.
+                  Today, Kutoo is helping people around the world take their
+                  first confident steps into crypto, with no real money
+                  required. We are just getting started, and we would love for
+                  you to be part of it.
                 </p>
               </div>
             </div>
@@ -111,23 +124,29 @@ export default function About() {
                 The People Behind
                 <span className="text-[#F28482]"> Kutoo</span>
               </h2>
-              <p className="text-lg text-muted-foreground">
-                A small team with big dreams of making crypto accessible to everyone.
-              </p>
+           
             </div>
-            
+
             <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
               {team.map((member, index) => (
-                <div 
+                <div
                   key={index}
                   className="p-8 rounded-3xl bg-card shadow-card border border-border/50 hover:shadow-elevated transition-all duration-300 text-center"
                 >
-                  <div className={`w-20 h-20 rounded-full ${member.avatarBg} flex items-center justify-center mx-auto mb-6`}>
-                    <span className="text-2xl font-bold text-primary-foreground">{member.avatar}</span>
+                  <div
+                    className={`w-20 h-20 rounded-full ${member.avatarBg} flex items-center justify-center mx-auto mb-6`}
+                  >
+                    <span className="text-2xl font-bold text-primary-foreground">
+                      {member.avatar}
+                    </span>
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-2">{member.name}</h3>
+                  <h3 className="text-xl font-bold text-foreground mb-2">
+                    {member.name}
+                  </h3>
                   <p className="text-primary mb-4 font-medium">{member.role}</p>
-                  <p className="text-muted-foreground leading-relaxed">{member.bio}</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {member.bio}
+                  </p>
                 </div>
               ))}
             </div>
@@ -137,15 +156,16 @@ export default function About() {
         {/* CTA Section */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-6">
-            <div 
+            <div
               className="relative rounded-[2.5rem] p-[2px] overflow-visible"
               style={{
-                background: 'linear-gradient(158.31deg, #84A59D 3.77%, #CDB4DB 85.77%)',
+                background:
+                  "linear-gradient(158.31deg, #84A59D 3.77%, #CDB4DB 85.77%)",
               }}
             >
               {/* CTA icon on top right border */}
               <div className="absolute top-[-27.5px] right-[130px] z-20">
-                <Image 
+                <Image
                   src="/cta-kt.svg"
                   alt="CTA icon"
                   width={55}
@@ -155,7 +175,7 @@ export default function About() {
               </div>
               {/* CTA icon on bottom left border */}
               <div className="absolute bottom-[-27.5px] left-[130px] z-20">
-                <Image 
+                <Image
                   src="/cta-kt.svg"
                   alt="CTA icon"
                   width={55}
@@ -166,21 +186,32 @@ export default function About() {
               <div className="relative rounded-[2.5rem] bg-background p-12 md:p-16 overflow-hidden">
                 <div className="absolute top-10 right-10 w-32 h-32 rounded-full bg-secondary/20 blur-2xl" />
                 <div className="absolute bottom-10 left-10 w-40 h-40 rounded-full bg-accent/20 blur-2xl" />
-                
+
                 <div className="relative z-10 text-center max-w-3xl mx-auto">
                   <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#243242] mb-6">
                     Ready to Start Your Journey?
                   </h2>
                   <p className="text-lg md:text-xl text-[#737F8C]/80 mb-8">
-                    Join thousands of learners who are building their crypto confidence with Kutoo.
+                    Join thousands of learners who are building their crypto
+                    confidence with Kutoo.
                   </p>
-                  <Link 
+                  <Link
                     href="/download"
                     className="inline-flex items-center gap-2 px-8 py-4 bg-[#cdb4db] text-foreground rounded-full font-semibold hover:bg-[#cdb4db]/90 transition-colors"
                   >
                     Get Started
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
                     </svg>
                   </Link>
                 </div>

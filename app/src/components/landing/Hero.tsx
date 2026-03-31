@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card shadow-card border border-border">
+            <div className="inline-flex items-center mt-4 gap-2 px-4 py-2 rounded-full bg-card shadow-card border border-border">
               <span className="text-sm text-muted-foreground">Learn crypto the fun way</span>
             </div>
             
@@ -66,16 +66,7 @@ const Hero = () => {
           
           <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] flex items-center justify-start lg:justify-center">
             {/* Lamps hanging from top, centered above new-hero.svg */}
-            <div className="absolute top-[-30px] md:top-[-35px] lg:top-[-128px] left-1/2 transform -translate-x-1/2 z-20 w-[200px] md:w-[250px] lg:w-[323px]">
-              <Image 
-                src="/Lamps.svg"
-                alt="Decorative lamps"
-                width={323}
-                height={64}
-                className="object-contain w-full h-auto"
-                priority
-              />
-            </div>
+        
             {/* Main illustration container - single combined SVG */}
             <div className="relative w-full h-full max-w-[855px]">
               <Image 
