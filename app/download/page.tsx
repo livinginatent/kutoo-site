@@ -21,14 +21,14 @@ export default function Download() {
                   Download Kutoo and start learning crypto the safe way
                 </h1>
                 <p className="text-lg text-[#586574] mb-8 leading-relaxed">
-                  Access simulated crypto boxes, live market data, and guided lessons
-                  from your phone. Practice with confidence before you ever invest
-                  real money.
+                  Access simulated crypto boxes, live market data, and guided
+                  lessons from your phone. Practice with confidence before you
+                  ever invest real money.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6">
                   <Link
-                    href="#"
+                    href="https://apps.apple.com/app/kutoo-learn-crypto-from-zero/id6759731329"
                     className="inline-flex items-center rounded-xl overflow-hidden hover:opacity-90 transition-opacity bg-transparent"
                   >
                     <Image
@@ -49,8 +49,6 @@ export default function Download() {
                     />
                   </Link>
                 </div>
-
-             
               </div>
 
               <div className="relative">
