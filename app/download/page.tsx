@@ -39,7 +39,7 @@ export default function Download() {
                   </Link>
 
                   <Link
-                    href="#"
+                    href="https://play.google.com/store/apps/details?id=com.domain.kutoo"
                     className="inline-flex items-center rounded-xl overflow-hidden hover:opacity-90 transition-opacity bg-transparent"
                   >
                     <Image
